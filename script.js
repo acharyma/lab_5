@@ -118,7 +118,7 @@ d3.csv("coffee-house-chains.csv", d3.autoType).then((data) => {
 
     type == "revenue"
       ? svg
-          .selectAll("rect")
+          .selectAll("#rect")
           .data(data, (d) => d)
           .enter()
           .append("rect")
@@ -134,7 +134,7 @@ d3.csv("coffee-house-chains.csv", d3.autoType).then((data) => {
           .attr("fill", "green")
           .attr("opacity", 1.0)
       : svg
-          .selectAll("rect")
+          .selectAll("#rect")
           .data(data, (d) => d)
           .enter()
           .append("rect")
